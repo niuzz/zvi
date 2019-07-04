@@ -1,7 +1,7 @@
 <template>
-  <div class="wrap">
-    button docs
-  </div>
+    <div class="wrap">
+      loading
+    </div>
 </template>
 
 <script>

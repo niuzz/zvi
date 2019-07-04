@@ -1,9 +1,9 @@
 {
   "name": "zvi",
-  "version": "0.1.1",
+  "version": "0.1.8",
   "private": false,
   "main": "package/zvi.umd.min.js",
-  "description": "The simple components for web mobile apps build by Vue.js",
+  "description": "A simple Vue components for web mobile apps",
   "style": "package/zvi.css",
   "keyword": "vue components zvue ui",
   "auth": "niuzz@hotmail.com",
@@ -36,10 +36,16 @@
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "cheerio": "^1.0.0-rc.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "highlight.js": "^9.15.8",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.2.4",
+    "markdown-it-container": "^2.0.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "vue-markdown-loader": "^2.4.1",
     "vue-template-compiler": "^2.6.10"
   }
 }

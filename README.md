@@ -52,11 +52,9 @@ Vue.use(Input.name, Input)
     |-- site // 静态文档网站目录
     |   |-- App.vue // 根文件
     |   |-- main.js // 入口
-    |   |-- router.js // 路由
-    |   |-- assets // 静态资源
-    |   |   |-- logo.png
+    |   |-- router // 路由
     |   |-- components // 组件 
-    |   |-- views // 页面
+    |   |-- common // 文档站公用资源
     |-- libs // 组件库
     |   |-- index.js // 入口文件
     |   |-- components // 组件库源码
