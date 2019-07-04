@@ -48,7 +48,8 @@ Vue.use(Input.name, Input)
     |-- README.md
     |-- vue.config.js // vue-cli扩展配置
     |-- dist // build生成打包目录
-    |-- document // 文档目录
+    |-- package // npm 打包目录
+    |-- site // 静态文档网站目录
     |   |-- App.vue // 根文件
     |   |-- main.js // 入口
     |   |-- router.js // 路由
