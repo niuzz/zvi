@@ -1,9 +1,11 @@
 <template>
-    <ul class="menu-ul">
-      <li v-for="(item, key) in menuList" :key="key">
-        {{item.name}}
-      </li>
-    </ul>
+  <ul class="menu-ul">
+    <li v-for="(item, key) in menuList"
+        :key="key"
+        class="menu-li">
+      {{item.name}}
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -25,10 +27,16 @@ export default {
   methods: {
   },
   mounted () {
-    console.log(this.menuList)
+
   }
 }
 </script>
 
 <style scoped lang="scss">
+.menu-ul {
+  font-size: 100%;
+  .menu-li {
+    max-height: 75px;
+  }
+}
 </style>

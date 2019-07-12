@@ -3,14 +3,35 @@
     <div class="navigator">
       <div class="logo">
         <router-link to="/">
-          <img src="./zvi-logo.png" alt="zvi" />
+          <img src="./zvi-logo.png"
+               alt="zvi" />
         </router-link>
         <h1 class="title">zvi 移动端vue样式库</h1>
+        <span class="menu-icon"
+              @click="toggleMenu">菜单</span>
       </div>
     </div>
     <router-view></router-view>
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      isShowMenu: false
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.isShowMenu = !this.isShowMenu
+      this.$bus.$emit('toggle-menu', this.isShowMenu)
+    }
+  },
+  beforeDestroy () {
+    this.$bus.$off('toggle-menu')
+  }
+}
+</script>
 <style lang="scss" scoped>
 .home-view-docs {
   height: 100%;
@@ -59,6 +80,15 @@
         .title {
           display: none;
         }
+      }
+    }
+    .menu-icon {
+      display: none;
+      float: right;
+      padding-right: 20px;
+      color: #fff;
+      @media screen and (max-width: 960px) {
+        display: inline;
       }
     }
   }
