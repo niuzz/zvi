@@ -1,6 +1,7 @@
 export default {
   'overview': {
     'name': '概览',
+    'angle': '01',
     'subRoutes': {
       'introduction': '介绍',
       'quick-start': '快速上手'
@@ -8,6 +9,7 @@ export default {
   },
   'components': {
     'name': '组件',
+    'angle': '01',
     'subRoutes': {
       'basic': {
         'name': '基础',
