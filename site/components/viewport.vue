@@ -43,6 +43,9 @@ export default {
   .side-menu {
     width: 260px;
     height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: rgb(238, 157, 91);
     border-right: 1px solid #e3e3e3;
     @media screen and (max-width: 960px) {
       position: fixed;

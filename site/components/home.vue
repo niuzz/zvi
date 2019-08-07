@@ -6,7 +6,7 @@
           <img src="./zvi-logo.png"
                alt="zvi" />
         </router-link>
-        <h1 class="title">zvi 移动端vue样式库</h1>
+        <h1 class="title"> <span>{ zvi }</span>  Vue移动端UI组件库</h1>
         <span class="menu-icon"
               @click="toggleMenu">菜单</span>
       </div>
@@ -71,6 +71,12 @@ export default {
         display: inline-block;
         color: #ff9900;
         vertical-align: middle;
+        font-size: 14px;
+        span {
+          color:#009966;
+          padding: 0 10px;
+          font-size: 20px;
+        }
       }
       @media screen and (max-width: 960px) {
         float: none;

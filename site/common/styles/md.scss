@@ -1,0 +1,114 @@
+.docs-wrap {
+  line-height: 1.6;
+  p {
+    margin: 1.2em 0;
+  }
+  h2 {
+    margin-bottom: 0.8em;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  h3 {
+    margin: 1em 0 1em;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  h4 {
+    margin: 0.8em 0 0.8em;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  strong {
+    display: inline-block;
+    margin: .3em .2em .3em;
+    font-weight: bold;
+    color:  rgb(238, 157, 91);
+  }
+  a {
+    text-decoration: none;
+    padding-left: .2em;
+    color: #009966;
+    &:hover {
+      color: #016644
+    }
+  }
+  .table-wrap {
+    overflow: hidden;
+  }
+  table{
+    // margin 0.8em 1em 0.8em 1em
+    width: 100%;
+    box-sizing: border-box;
+    table-layout: fixed;
+    border-collapse: separate;
+    border: 1px solid #666;
+    border-width: 1px 0 0 1px;
+    border-radius: 4px;
+    th, td {
+      padding: 6px 13px;
+      border: 1px solid #666;
+      border-width: 0 1px 1px 0;
+      vertical-align: middle;
+      text-align: left;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+    tr{
+      th{
+        font-weight: 600;
+        background-color: #2D2B57;
+        color: #fff;
+        &:first-child{
+          border-top-left-radius: 4px}
+        &:last-child{
+          border-top-right-radius: 4px}
+      }
+    }
+}
+  ul, ol, li{
+    line-height: 20px;
+  }
+  li{
+    list-style: inherit;
+    margin: 1em 0;
+  }
+  ul{
+    padding-left: 20px;
+  }
+
+}
+.phone {
+  --w: 280px;
+  width: var(--w);
+  height: 565px;
+  margin: 1.5em auto;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  border-radius: 20px;
+  &::before {
+    width: 180px;
+    height: 20px;
+    background: #000;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
+    display: block;
+    content: '';
+  }
+  &::after {
+    width: 50px;
+    height: 5px;
+    background: #222;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    border-radius: 20px;
+    display: block;
+    content: '';
+  }
+  .demo-wrap {
+    padding: 20px;
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+}

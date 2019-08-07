@@ -4,8 +4,10 @@ import router from './router'
 import DemoBlock from './components/demo-block.vue'
 import zvi from '../libs'
 import EventBus from './common/js/utils-bus'
-import './common/styles/index.scss'
+
 import 'highlight.js/styles/shades-of-purple.css'
+
+import './common/styles/index.scss'
 
 Vue.config.productionTip = false
 Vue.prototype.$bus = EventBus

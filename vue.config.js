@@ -71,6 +71,23 @@ module.exports = {
                 return '</div></demo-block>\n'
               }
             }
+          }],
+          [require('markdown-it-container'), 'code', {
+            validate: (params) => params.trim().match(/^code\s*(.*)$/),
+            render: (tokens, idx) => {
+              if (tokens[idx].nesting === 1) {
+                // 1.获取第一行的内容使用markdown渲染html作为组件的描述
+                let demoInfo = tokens[idx].info.trim().match(/^code\s+(.*)$/)
+                let description = (demoInfo && demoInfo.length > 1) ? demoInfo[1] : ''
+                let descriptionHTML = description ? require('markdown-it')().render(description) : ''
+                // 3.使用自定义开发组件【DemoBlock】来包裹内容并且渲染成案例和代码示例
+                return `<demo-block>
+                ${descriptionHTML}
+                <div class="hljs" slot="highlight">`
+              } else {
+                return '</div></demo-block>\n'
+              }
+            }
           }]
         ]
       })

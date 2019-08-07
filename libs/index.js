@@ -1,3 +1,5 @@
+import './font'
+
 import button from '&/components/button'
 
 const components = [

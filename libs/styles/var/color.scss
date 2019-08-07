@@ -1,4 +1,30 @@
+// basic
+$color-orange: #ff9900;
+$color-blue: #16202d;
+$color-background: #f3f4f5;
+$white: #fff;
 
-// primary
-$color-dark-blue-grey: #16202d; // theme
-$color-orange-yellow:  #ff9900; // text
+// gray
+$color-dark-grey : #333;
+$color-grey : #666;
+$color-light-grey : #999;
+$color-light-grey-s : #ccc;
+$color-light-grey-ss : #eee;
+$color-light-grey-sss : #fcfcfc;
+$color-active-grey : #e8e8e8;
+
+$color-dark-grey-opacity : rgba(74, 76, 91, 0.8);
+$color-grey-opacity : rgba(0, 0, 0, .08);
+$color-light-grey-opacity : rgba(0, 0, 0, .04);
+
+// orange
+$color-dark-orange: #da8302;
+$color-light-orange: #f8c373;
+$color-orange-opacity: rgba(252, 145, 83, .08);
+$color-light-orange-opacity: rgba(252, 145, 83, .04);
+
+// line
+$color-line: #ebebeb;
+
+// mask
+$color-mask-bg: rgba(37, 38, 45, .4)

@@ -1,21 +1,15 @@
-<template>
-    <div class="wrap">
-      quick-start
-    </div>
-</template>
-
 <script>
+import QuickStart from './quick-start.md'
 export default {
-  data () {
-    return {
-    }
-  },
-  computed: {
-  },
-  methods: {
+  render () {
+    return (
+      <div class="quick-start-wrap">
+        <QuickStart></QuickStart>
+      </div>
+    )
   }
 }
 </script>
+<style scoped>
 
-<style scoped lang="scss">
 </style>

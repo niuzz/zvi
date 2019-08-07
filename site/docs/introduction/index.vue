@@ -1,18 +1,10 @@
-<template>
-    <div class="wrap">
-      introduction
-    </div>
-</template>
-
 <script>
+import Introduction from './introduction.md'
 export default {
-  data () {
-    return {
-    }
-  },
-  computed: {
-  },
-  methods: {
+  render () {
+    return (
+      <Introduction/>
+    )
   }
 }
 </script>

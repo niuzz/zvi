@@ -1,6 +1,6 @@
 {
   "name": "zvi",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
   "main": "package/zvi.umd.min.js",
   "description": "A simple Vue components for web mobile apps",

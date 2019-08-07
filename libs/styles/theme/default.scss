@@ -1,0 +1,13 @@
+@import '../var/color.scss';
+
+// button
+$btn-color: $color-orange;
+$btn-bgc: $color-blue;
+
+.icon {
+  width: 1em; height: 1em;
+  padding-right: .5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

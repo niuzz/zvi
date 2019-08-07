@@ -40,18 +40,20 @@ export default {
 <style scoped lang="scss">
 .menu-ul-wrap {
   font-size: 100%;
-  background-color: rgb(238, 157, 91);
   height: 100%;
   .menu-li {
-    max-height: 75px;
     text-indent: 60px;
   }
   .menu-item-name {
     font-size: 1em;
     margin-left: 30px;
     margin-right: 30px;
-    text-indent: -20px;
+    text-indent: 0px;
+    padding: 10px;
     &.menu-open {
+      color: #009966;
+      padding: 10px 0px;
+      margin-bottom: 10px;
       font-size: 1.2em;
       border-bottom: #e3e3e3 solid 1px;
     }
